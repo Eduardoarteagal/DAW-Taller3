@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante de Pizzas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/imagenes/logo.jpg" alt="logo pizza" width="80" height="90">
+        <h1>Restaurante de Pizzas</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#pedido">Hacer pedido</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div>
+                <a target="_blank" href="/imagenes/pizza-de-peperoni.jpg">
+                    <img src="/imagenes/pizza-de-peperoni.jpg" alt="peperoni">
+                </a>
+                <p>Pizza Peperoni</p>
+            </div>
+            <div>
+                <a target="_blank" href="/imagenes/foto-portada-pizza-cuatro-quesos.jpg">
+                    <img src="/imagenes/foto-portada-pizza-cuatro-quesos.jpg" alt="4quesos">
+                </a>
+                <p>Pizza Cuatro Quesos</p>
+            </div>
+            <div>
+                <a target="_blank" href="/imagenes/pizza-margarita.jpg">
+                    <img src="/imagenes/pizza-margarita.jpg" alt="margarita">
+                </a>
+                <p>Pizza Margarita</p>
+            </div>
+            <div>
+                <a target="_blank" href="/imagenes/Pizza_vegetariana.jpg">
+                    <img src="/imagenes/Pizza_vegetariana.jpg" alt="vegetariana">
+                </a>
+                <p>Pizza Vegetariana</p>
+            </div>
+        </section>
+
+        <section id="home">
+            <h2>Bienvenidos a nuestro restaurante</h2>
+            <p>Las mejores pizzas de la ciudad, hechas con los ingredientes más frescos.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Menú</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clase de pizza</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pizza Margarita</td>
+                        <td>$5</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Pepperoni</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Cuatro Quesos</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Vegetariana</td>
+                        <td>$20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="pedido">
+            <h2>Hacer Pedido</h2>
+            <p>Arma tu pedido a tu gusto</p>
+            <form action="procesar.php" method="post">
+                <label for="nombre">Nombre de quien retira:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="mensaje">Detalles:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Email: restaurantepizza@hotmail.com</p>
+            <p>Teléfono: +549 547 80900</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Restaurante de Pizzas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
